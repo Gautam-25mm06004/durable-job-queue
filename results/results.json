@@ -1,0 +1,116 @@
+{
+  "throughput": [
+    {
+      "workers": 1,
+      "jobs": 1000,
+      "seconds": 6.51,
+      "jobs_per_s": 153.6,
+      "done": 1000
+    },
+    {
+      "workers": 2,
+      "jobs": 1000,
+      "seconds": 3.83,
+      "jobs_per_s": 261.1,
+      "done": 1000
+    },
+    {
+      "workers": 4,
+      "jobs": 1000,
+      "seconds": 2.43,
+      "jobs_per_s": 411.5,
+      "done": 1000
+    },
+    {
+      "workers": 8,
+      "jobs": 1000,
+      "seconds": 1.73,
+      "jobs_per_s": 578.0,
+      "done": 1000
+    },
+    {
+      "workers": 16,
+      "jobs": 1000,
+      "seconds": 1.46,
+      "jobs_per_s": 684.9,
+      "done": 1000
+    }
+  ],
+  "crashes": [
+    {
+      "crash_prob_per_job": 0.0,
+      "worker_crashes": 0,
+      "done": 1000,
+      "stuck": 0,
+      "executions": 1000,
+      "jobs_run_twice_or_more": 0,
+      "transactional_effects (rows)": 1000,
+      "naive_effects (rows)": 1000,
+      "naive_duplicates": 0,
+      "wrong_results": 0,
+      "seconds": 1.17
+    },
+    {
+      "crash_prob_per_job": 0.01,
+      "worker_crashes": 9,
+      "done": 1000,
+      "stuck": 0,
+      "executions": 1009,
+      "jobs_run_twice_or_more": 9,
+      "transactional_effects (rows)": 1000,
+      "naive_effects (rows)": 1009,
+      "naive_duplicates": 9,
+      "wrong_results": 0,
+      "seconds": 1.54
+    },
+    {
+      "crash_prob_per_job": 0.05,
+      "worker_crashes": 53,
+      "done": 1000,
+      "stuck": 0,
+      "executions": 1053,
+      "jobs_run_twice_or_more": 47,
+      "transactional_effects (rows)": 1000,
+      "naive_effects (rows)": 1053,
+      "naive_duplicates": 53,
+      "wrong_results": 0,
+      "seconds": 2.51
+    },
+    {
+      "crash_prob_per_job": 0.1,
+      "worker_crashes": 124,
+      "done": 1000,
+      "stuck": 0,
+      "executions": 1124,
+      "jobs_run_twice_or_more": 110,
+      "transactional_effects (rows)": 1000,
+      "naive_effects (rows)": 1124,
+      "naive_duplicates": 124,
+      "wrong_results": 0,
+      "seconds": 3.37
+    },
+    {
+      "crash_prob_per_job": 0.2,
+      "worker_crashes": 248,
+      "done": 1000,
+      "stuck": 0,
+      "executions": 1248,
+      "jobs_run_twice_or_more": 198,
+      "transactional_effects (rows)": 1000,
+      "naive_effects (rows)": 1248,
+      "naive_duplicates": 248,
+      "wrong_results": 0,
+      "seconds": 5.55
+    }
+  ],
+  "retries": {
+    "jobs": 1000,
+    "poison_jobs": 20,
+    "transient_failure_prob": 0.2,
+    "done": 980,
+    "dead_lettered": 20,
+    "stuck": 0,
+    "executions": 1230,
+    "seconds": 2.38
+  }
+}
